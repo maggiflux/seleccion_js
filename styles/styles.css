@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=GFS+Neohellenic:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+body{
+    font-family: 'GFS Neohellenic', sans-serif;
+    background-color: #FFEAD4;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: auto;
+    background-image: url(/resourses/milad-fakurian-HE1_K4_-QT8-unsplash.jpg);
+}
+
+.container__img{
+    flex-basis: 60%;  
+}
+
+.img__peq{
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    background-image: url(/resourses/peq.png);
+    background-position: center;
+    background-size: 105%;
+    animation: movestatue 2s ease-in-out infinite;
+}
+
+@keyframes movestatue {
+    0% { 
+        transform: translateY(.30rem);
+    }
+    50% {
+        transform: translateX(-.75rem);
+    }
+    100%{
+        transform: translateY(.30rem);
+    }
+}
+
+.card{
+    flex-basis: 40%;
+}
+
+.card__answer{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: center;
+    padding: 0 1rem 0 1rem;
+    transition: 0.2s ease-in-out; 
+}
+
+.card__answer > .btn--start {
+    margin: auto;
+    text-align: center;
+}
+
+.card__text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+    color: #AC845A;
+}
+
+.card__text > h1 {
+    color: #8e6c47;
+    font-weight: 700;
+    font-size: 4rem;
+    margin: 0;
+}
+
+.card__text > p {
+    color: #AC845A;
+    font-size: .9rem;
+}
+
+.buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.btn, .btn--start {
+    font-weight: bold;
+    border: none;
+    padding: .5rem .9rem .5rem .9rem;
+    border-radius: 15px;
+    cursor: pointer;
+    color: #B5E6F7;
+    background-color: #5B96AB;
+}
+
+.btn:hover, .btn--start:hover{
+    background-color: #B5E6F7;
+    color: rgb(91, 91, 91);
+}
+
+@media only screen and (min-width: 768px) {
+    .img__peq{
+        background-size: 30%;
+    }
+}
+
+
+
